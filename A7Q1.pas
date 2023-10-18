@@ -1,4 +1,6 @@
 
+
+
 program phy_calc_Q1;
 var
     charged , dps , rps , circumference , pi , diameter , width , rpm , charge , time , current : double;
@@ -22,7 +24,7 @@ begin
     dps := circumference * rps; {in cm/s}
     
     {convert density to actual charge}
-    charge := charged / (dps * width);
+    charge := charged * (dps * width);
     {current = charge over time}
     time := 1;
     current := charge / time;
