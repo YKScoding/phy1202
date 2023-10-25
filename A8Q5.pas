@@ -26,7 +26,7 @@ begin
         writeln(q*power(10,6):8:8,'uC   ',i*power(10,6):8:8,'uA   ',time*1000:0:0,' ms');
     end;
     
-
+    writeln;
     writeln('the charge is ',q* power(10,6):8:8,'uC');
     writeln('the current is ',i* power(10,6):8:8,'uA');
     writeln('the initial charge is ',q0*power(10,6):8:8,'uC');
