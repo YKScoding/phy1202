@@ -15,8 +15,8 @@ begin
     readln(B,i,r);
     r:=r/200;{convert to radius in meter}
     A:=pi * sqr(r);
-    T:=i*A*B*sin(arctan(-0.8/-0.6)); {assume that i&j stays unchanged}
-    writeln(radtodeg(arctan(-0.8/-0.6)):6:6,' degrees');
+    T:=i*A*B*1; {assume that sin 90 degree}
+    {writeln(radtodeg(arctan(-0.8/-0.6)):6:6,' degrees');}
     T:=T*1000;
     writeln('The required torque is ',T:6:6,' m-Nm')
 end.
