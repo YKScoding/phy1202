@@ -14,6 +14,6 @@ begin
     writeln ('input magnetic field,current,x,y');
     readln(B,i,x,y);
     A:=x*y;
-    T:=i*A*B*sin(degtorad(90-35));
+    T:=i*A*B*sin(degtorad(35));
     writeln('The required torque is ',T:6:6,' Nm.')
 end.
