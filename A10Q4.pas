@@ -20,11 +20,10 @@ begin
     readln(r,i,d);
     r:=r/100;{also convert cm to m}
     d:=d/100;{convert cm to m}
-    rx:=2*power(sqr(r)+sqr(d/2),3/2);
-    b:=(u0*i*r)/rx;
+    rx:={2*}power(sqr(r)+sqr(d/2),3/2);
+    b:=(u0*i*sqr(r))/rx;
     
-    b:=b*2;
+    {b:=b*2;}
     b:=b*power(10,5);
     writeln('The magnitude of the B-field is ', b:6:6, ' x 10^-5 T');
 end.
-
