@@ -19,9 +19,8 @@ begin
     b1:=(u0*i1)/(2*pi*d);
     
     b1:=b1*power(10,6);
-    b1:=b1*2;
+    b1:=b1;
     {since distance and current are the same}
     
     writeln('The magnetic field is ', b1:6:6, ' uT');
 end.
-
