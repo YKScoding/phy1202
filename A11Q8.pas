@@ -24,11 +24,11 @@ begin
     A:=pi*sqr(r);
     flux:=B*A;{-(B_initial*A), which is 0}
     {emf = -delta(N*Flux)/deltaT}
-    n:=n/A;
-    V:=(flux*n)/time;
+    {n:=n/A;}
+    V:=(abs(0-flux)*n)/time;
     {-N can be abs()'ed since the question is asking for magnitude only.}
     {TODO: make it correct...}
-    
+    writeln('The Area is ', A:6:6);
     writeln('The flux is: ',flux:6:6,' . ');
     writeln('The emf is: ',V:6:6,' V. ')
 end.
