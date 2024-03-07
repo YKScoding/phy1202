@@ -16,5 +16,7 @@ begin
     Fa := Fa * k;
     Fb := Fb * k;
     ans := Fa + Fb;
+    writeln('Fa: ', Fa:2:2);
+    writeln('Fb: ', Fb:2:2);
     writeln('the answer is ' , ans:8:6 );
 end.
